@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPT AI模型接口 | 一步API专业中转平台 | 高效稳定AI服务</title>
+  
+<meta name="description" content="一步API提供GPT系列全模型API服务，涵盖GPT-3.5、GPT-4、GPT-4o、GPT-5等最新模型，支持高并发低延迟，助力开发者和企业快速集成OpenAI能力。立即申请GPT-5 API密钥，打造顶尖智能应用。" />
+
+<meta name="keywords" content="GPT, GPT-3.5, GPT-4, GPT-4o, GPT-5, GPT-5 Pro, GPT-5 Turbo, OpenAI, ChatGPT, AI模型, AI接口, 一步API, 高并发API, AI开发平台" />
+
+  
+  <meta name="author" content="一步API中转站" />
+  
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e4e9f0;
+      font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #0f4c75 0%, #1b6ca8 100%);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(15,76,117,0.5);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      margin: 14px 0 0;
+      font-size: 20px;
+      color: #bbdefb;
+      font-weight: 500;
+    }
+    .btn-primary {
+      display: inline-block;
+      margin-top: 30px;
+      background: linear-gradient(135deg, #3282b8 0%, #1e6fa8 100%);
+      color: #ffffff;
+      padding: 16px 40px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 16px rgba(50,130,184,0.6);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #1e6fa8 0%, #145a8a 100%);
+      box-shadow: 0 8px 20px rgba(30,111,168,0.8);
+      transform: translateY(-2px);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 50px auto 60px;
+      padding: 0 28px;
+    }
+    h2 {
+      border-left: 7px solid #3282b8;
+      padding-left: 16px;
+      margin-bottom: 26px;
+      font-size: 28px;
+      color: #90caf9;
+      font-weight: 700;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    section p {
+      font-size: 17px;
+      margin-bottom: 22px;
+      color: #e4e9f0;
+      line-height: 1.9;
+    }
+    section a {
+      color: #64b5f6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section a:hover {
+      text-decoration: underline;
+      color: #90caf9;
+    }
+    ul {
+      color: #c5d8e8;
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 14px 0;
+      padding-left: 28px;
+      position: relative;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    ul li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #3282b8;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    pre {
+      background: #0d1b2a;
+      padding: 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+      color: #a8dadc;
+      font-size: 15px;
+      line-height: 1.6;
+      user-select: text;
+      box-shadow: inset 0 0 10px rgba(50,130,184,0.4);
+      border: 1px solid #1b3a52;
+    }
+    code {
+      font-family: "Consolas", "Monaco", monospace;
+    }
+    .faq-item {
+      margin-bottom: 28px;
+      padding: 18px;
+      background: rgba(50,130,184,0.08);
+      border-radius: 8px;
+      border-left: 4px solid #3282b8;
+    }
+    .faq-item strong {
+      color: #64b5f6;
+      font-size: 18px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 14px;
+      color: #6c8199;
+      font-size: 14px;
+      border-top: 1px solid #2a4158;
+      margin-top: 80px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>GPT AI模型 — 全球领先智能语言引擎</h1>
+  <p>专业API中转服务平台，为开发者和企业提供高效AI解决方案</p>
+  <a href="https://yibuapi.com" class="btn-primary" target="_blank" rel="noopener">立即获取GPT API密钥</a>
+</header>
+
+<div class="container">
+  <section>
+    <h2>关于GPT模型系列</h2>
+    <p>GPT（Generative Pre-trained Transformer）是由OpenAI研发的革命性语言模型，凭借强大的自然语言处理能力，在文本生成、智能问答、代码编写、内容创作等领域表现卓越，已成为全球开发者首选的AI基础设施。</p>
+    <p>从GPT-3.5到最新的GPT-4o，每一代模型都在准确性、创造力和理解力上实现突破性提升，为各类智能应用提供坚实技术支撑，加速企业数字化转型进程。</p>
+  </section>
+
+  <section>
+    <h2>选择一步API的GPT服务的核心优势</h2>
+    <ul>
+      <li>超高并发处理：支持海量并发请求，轻松应对流量高峰</li>
+      <li>完美兼容官方：100%兼容OpenAI官方接口，零代码迁移</li>
+      <li>极速响应体验：毫秒级响应时间，打造流畅用户体验</li>
+      <li>透明灵活计费：按需付费机制，成本可控透明合理</li>
+      <li>专业技术保障：全天候技术团队在线，快速响应解决问题</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>接入使用指南</h2>
+    <p>第一步：访问 <a href="https://yibuapi.com" target="_blank" rel="noopener">一步API官方网站</a>，完成账号注册与登录操作。</p>
+    <p>第二步：进入管理控制台，创建您专属的GPT API访问密钥，开启AI应用开发之旅。</p>
+    <p>第三步：通过标准化API调用方式，将GPT强大能力无缝集成到您的产品中，提升应用智能化水平。</p>
+  </section>
+
+  <section>
+    <h2>代码示例（Node.js）</h2>
+    <pre><code>const { Configuration, OpenAIApi } = require("openai");
+
+const configuration = new Configuration({
+  apiKey: "您的API密钥",
+  basePath: "https://yibuapi.com/v1",
+});
+
+const openai = new OpenAIApi(configuration);
+
+async function callGPT() {
+  const response = await openai.createChatCompletion({
+    model: "gpt-4o",
+    messages: [
+      { role: "system", content: "你是一位专业且友好的AI助理。" },
+      { role: "user", content: "请详细介绍GPT模型的核心优势。" },
+    ],
+  });
+  console.log(response.data.choices[0].message.content);
+}
+
+callGPT();
+</code></pre>
+  </section>
+
+  <section>
+    <h2>常见问题解答</h2>
+    
+    <div class="faq-item">
+      <p><strong>1. 一步API的GPT服务可靠安全吗？</strong></p>
+      <p>我们采用银行级数据加密技术，确保API调用全程安全可靠，严格遵守数据隐私保护规范，已为数千家企业提供稳定服务。</p>
+    </div>
+
+    <div class="faq-item">
+      <p><strong>2. 如何快速获取GPT API访问密钥？</strong></p>
+      <p>注册一步API账号后，在控制台即可一键生成GPT专属API密钥，整个流程不超过3分钟，无需复杂审核。</p>
+    </div>
+
+    <div class="faq-item">
+      <p><strong>3. 费用结算方式如何？</strong></p>
+      <p>提供多元化计费模式，支持预充值和后付费两种方式，费用透明公开，适配各类业务规模需求。</p>
+    </div>
+
+    <div class="faq-item">
+      <p><strong>4. 能否承载高并发业务场景？</strong></p>
+      <p>采用分布式云架构与智能流量调度技术，轻松支持每秒上万次API调用，保障业务稳定运行。</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 一步API中转站 版权所有
+</footer>
+
+</body>
+</html>
